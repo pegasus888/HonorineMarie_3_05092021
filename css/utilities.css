@@ -1,0 +1,67 @@
+:root {
+  --primary-clr: #9356dc;
+  --secondary-clr: #ff79da;
+  --tertiary-clr: #99e2d0;
+  --light-color: #f2f2f2;
+  --dark-color: #333;
+
+  --ff--primary: "Roboto", sans-serif;
+  --ff--secondary: "Shrikhand", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin-inline: auto;
+  font-family: var(--ff--primary);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--dark-color);
+}
+
+ul {
+  list-style-type: none;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1 {
+  font-family: var(--ff--secondary);
+  font-weight: 400;
+}
+
+h2,
+h4 {
+  font-weight: 200;
+}
+
+p {
+  font-weight: 600;
+}
