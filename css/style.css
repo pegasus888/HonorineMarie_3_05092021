@@ -102,7 +102,8 @@ header img {
   line-height: 1.2;
 }
 
-.content2 {
+.content2,
+.content3 {
   text-align: center;
   margin-bottom: 2em;
 }
@@ -124,4 +125,17 @@ header img {
   background: linear-gradient(217deg, rgba(238, 125, 187, 0.918), rgba(255,0,0,0) 70.71%),
             linear-gradient(127deg, rgba(143, 63, 143, 0.8), rgba(0,255,0,0) 70.71%),
             linear-gradient(336deg, rgba(85, 10, 121, 0.8), rgba(0,0,255,0) 70.71%);
+}
+
+/* Content3 */
+.content3 li {
+  margin-bottom: 1em;
+  padding: 1em 4em 1em 1em;
+  border-radius: 1em;
+  box-shadow: 0 0 10px lightgrey;
+}
+
+.content3 .fas {
+  margin-right: 2em;
+  margin-left: 1em;
 }
