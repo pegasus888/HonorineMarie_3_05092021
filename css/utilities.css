@@ -2,8 +2,8 @@
   --primary-clr: #9356dc;
   --secondary-clr: #ff79da;
   --tertiary-clr: #99e2d0;
-  --light-color: #f2f2f2;
-  --dark-color: #333;
+  --light-clr: #f2f2f2;
+  --dark-clr: #333;
 
   --ff--primary: "Roboto", sans-serif;
   --ff--secondary: "Shrikhand", sans-serif;
@@ -24,7 +24,8 @@ h1,
 h2,
 h3,
 h4,
-p {
+p,
+ul {
   padding: 0;
   margin: 0;
 }
@@ -34,17 +35,18 @@ body {
   font-family: var(--ff--primary);
   font-size: 1rem;
   line-height: 1.6;
-  color: var(--dark-color);
+  color: var(--dark-clr);
 }
 
 ul {
   list-style-type: none;
   font-size: 1rem;
+  display: inline-block;
 }
 
 a {
   text-decoration: none;
-  color: var(--dark-color);
+  color: var(--dark-clr);
 }
 
 img {
@@ -62,6 +64,6 @@ h4 {
   font-weight: 200;
 }
 
-p {
-  font-weight: 600;
+h2 {
+  margin-bottom: 1em;
 }

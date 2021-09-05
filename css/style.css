@@ -1,2 +1,127 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+/* Backgrounds */
+.content2,
+.content4,
+.content7,
+.pick,
+.own,
+.enjoy {
+  background-color: var(--light-clr);
+}
+
+.content5 {
+  background-color: var(--dark-clr);
+  color: white;
+}
+
+.content5 a {
+  color: white;
+}
+
+.geolocBar {
+  background-color: lightgrey;
+  margin-bottom: 2em;
+}
+
+/* Typo */
+.content5 h2 {
+  font-family: var(--ff--secondary);
+}
+
+.content2 h2,
+.content3 h2,
+.content4 h2 {
+  font-weight: 600;
+}
+
+/* Cards */
+.resto {
+  width: auto;
+  border: 1px solid var(--light-clr);
+  box-shadow: 0 0 16px lightgrey;
+  border-radius: 1rem;
+  margin-bottom: 1em;
+}
+
+main {
+  margin: 0 auto;
+}
+
+.content4 {
+  padding: 3em 1em;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 1.5em;
+  margin-bottom: 1em;
+}
+
+/* Images */
+.content4 img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  margin-bottom: 1em;
+}
+
+/* .resto .two img {
+  object-position: center;
+} */
+
+/* Header */
+.content1 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+header img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Footer */
+.content5 {
+  padding-block: 1em;
+  padding-inline-start: 1em;
+}
+
+/* Content2 */
+.locationInput {
+  border: none;
+  background-color: lightgrey;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.introCatch {
+  margin-bottom: .3em;
+  line-height: 1.2;
+}
+
+.content2 {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.content2 p {
+  margin-bottom: 1em;
+  line-height: 1.2;
+}
+
+.content2 button {
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 4em;
+  font-weight: 600;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 0 0 12px grey;
+  color: white;
+  background: linear-gradient(217deg, rgba(238, 125, 187, 0.918), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(143, 63, 143, 0.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(85, 10, 121, 0.8), rgba(0,0,255,0) 70.71%);
+}
