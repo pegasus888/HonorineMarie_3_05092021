@@ -22,10 +22,10 @@
 
 .geolocBar {
   height: 4rem;
-  background-color: #e6dddd61;
+  background-color: #dcdcdc;
   padding-top: 1rem;
   margin-bottom: 2em;
-  box-shadow: inset 0 5px 5px 1px rgb(206, 195, 195);
+  box-shadow: inset 0px 5px 1px 0px rgb(206, 195, 195);
 }
 
 /* Typo */
@@ -40,7 +40,8 @@
 }
 
 /* Cards */
-.resto {
+.resto,
+.menu-card {
   width: auto;
   border: var(--border);
   box-shadow: var(--boxShadow);
@@ -56,7 +57,10 @@ main {
   padding: 3em 1em;
 }
 
-.card {
+.card,
+.menu__title,
+.card__info,
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,6 +90,12 @@ header img {
   margin-right: auto;
 }
 
+.arrow {
+  border: none;
+  background: white;
+  font-size: 1.5em;
+}
+
 /* Footer */
 .content5 {
   padding-block: 2em;
@@ -93,6 +103,10 @@ header img {
 }
 
 /* Content2 */
+.locationIcon {
+  margin-left: 2em;
+}
+
 .locationInput {
   border: none;
   background-color: #e6dddd61;
@@ -117,8 +131,9 @@ header img {
   line-height: 1.2;
 }
 
-.content2 button {
-  padding: 1em;
+.content2 button,
+.content7 button {
+  padding: 1em 2em;
   margin-top: 1em;
   margin-bottom: 4em;
   font-weight: 600;
@@ -127,6 +142,12 @@ header img {
   box-shadow: 0 0 12px grey;
   color: white;
   background: var(--gradientBg);
+}
+
+.gradientBtn {
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 /* Content3: Fonctionnement */
@@ -141,8 +162,16 @@ header img {
   box-shadow: 0 0 10px lightgrey;
 }
 
+.content3 li .fas:hover {
+  color: var(--primary-clr);
+}
+
+/* .content3 li .fas:focus {
+  color: rgb(114, 206, 160);
+} */
+
 .content3 a {
-font-weight: 600;
+  font-weight: 600;
 }
 
 .content3 .fas {
@@ -151,11 +180,40 @@ font-weight: 600;
   color: gray;
 }
 
-/* Content4 */
-.content4 .far {
-font-size: 2rem;
+.content3 ul {
+  counter-reset: ordered-list;
 }
 
+.content3 li {
+  position: relative;
+}
+
+.content3 li::before {
+  counter-increment: ordered-list;
+  content: counter(ordered-list);
+  position: absolute;
+  left: -1em;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  color: white;
+  background: var(--primary-clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+/* Content4 */
+.content4 .far,
+.content7 .far {
+  font-size: 2rem;
+}
+
+.content4 .far:hover,
+.content7 .far:hover {
+  background: var(--gradientBg);
+}
 
 /* Content5 */
 .content5 .fas {
@@ -183,4 +241,51 @@ font-size: 2rem;
 
 .content5 .fa-hands-helping {
 font-size: smaller;
+}
+
+/* Content7 */
+
+.content7 {
+  margin-right: auto;
+  margin-left: auto;
+  border-top-left-radius: var(--borderRadius);
+  border-top-right-radius: var(--borderRadius);
+  margin-top: 10em;
+}
+
+main {
+  padding: 2em 1em;
+}
+
+.menu-card {
+  background: white;
+}
+
+.content7 .menu__title {
+padding-top: 2em;
+}
+
+.content7 h3 {
+padding-left: 1.2em;
+padding-top: .8em;
+}
+
+.starters,
+.courses {
+  margin-bottom: 3em;
+}
+
+.content7 h2:after {
+  content: "";
+  border-bottom: 2px solid var(--tertiary-clr);
+  width: 13%;
+  display: block;
+  margin: 0;
+}
+
+.content7 {
+  background: url("../images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  /*background-position: 25px 25px;*/
+  background-repeat: no-repeat;
+  background-position: top;
 }
