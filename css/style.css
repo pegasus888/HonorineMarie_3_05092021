@@ -21,8 +21,11 @@
 }
 
 .geolocBar {
-  background-color: lightgrey;
+  height: 4rem;
+  background-color: #e6dddd61;
+  padding-top: 1rem;
   margin-bottom: 2em;
+  box-shadow: inset 0 5px 5px 1px rgb(206, 195, 195);
 }
 
 /* Typo */
@@ -39,9 +42,9 @@
 /* Cards */
 .resto {
   width: auto;
-  border: 1px solid var(--light-clr);
-  box-shadow: 0 0 16px lightgrey;
-  border-radius: 1rem;
+  border: var(--border);
+  box-shadow: var(--boxShadow);
+  border-radius: var(--borderRadius);
   margin-bottom: 1em;
 }
 
@@ -85,16 +88,17 @@ header img {
 
 /* Footer */
 .content5 {
-  padding-block: 1em;
-  padding-inline-start: 1em;
+  padding-block: 2em;
+  padding-inline-start: 2em;
 }
 
 /* Content2 */
 .locationInput {
   border: none;
-  background-color: lightgrey;
+  background-color: #e6dddd61;
   font-size: 1rem;
   font-weight: 600;
+  margin-left: 1em;
 }
 
 .introCatch {
@@ -105,7 +109,7 @@ header img {
 .content2,
 .content3 {
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 4em;
 }
 
 .content2 p {
@@ -122,12 +126,14 @@ header img {
   border-radius: 2rem;
   box-shadow: 0 0 12px grey;
   color: white;
-  background: linear-gradient(217deg, rgba(238, 125, 187, 0.918), rgba(255,0,0,0) 70.71%),
-            linear-gradient(127deg, rgba(143, 63, 143, 0.8), rgba(0,255,0,0) 70.71%),
-            linear-gradient(336deg, rgba(85, 10, 121, 0.8), rgba(0,0,255,0) 70.71%);
+  background: var(--gradientBg);
 }
 
-/* Content3 */
+/* Content3: Fonctionnement */
+.content3 h2 {
+  margin-right: 6em;
+}
+
 .content3 li {
   margin-bottom: 1em;
   padding: 1em 4em 1em 1em;
@@ -135,7 +141,46 @@ header img {
   box-shadow: 0 0 10px lightgrey;
 }
 
+.content3 a {
+font-weight: 600;
+}
+
 .content3 .fas {
   margin-right: 2em;
   margin-left: 1em;
+  color: gray;
+}
+
+/* Content4 */
+.content4 .far {
+font-size: 2rem;
+}
+
+
+/* Content5 */
+.content5 .fas {
+  padding-right: 1em;
+}
+
+.textContainer {
+  position: relative;
+}
+
+/* Top right text */
+.text-block {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: rgb(160, 238, 206);
+  color: rgb(9, 136, 98);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.text-block h4 {
+  font-weight: 700;
+}
+
+.content5 .fa-hands-helping {
+font-size: smaller;
 }
