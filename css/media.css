@@ -1,0 +1,7 @@
+@media (min-width: 600px) {
+  /* Content4 */
+.content4 img,
+.content6-photo img {
+  height: 565px;
+}
+}

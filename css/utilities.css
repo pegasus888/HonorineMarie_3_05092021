@@ -8,7 +8,7 @@
   --ff--primary: "Roboto", sans-serif;
   --ff--secondary: "Shrikhand", sans-serif;
 
-  --gradientBg: linear-gradient(var(--secondary-clr), var(--primary-clr));
+  --gradientBg: linear-gradient(175deg, var(--secondary-clr), var(--primary-clr));
 
   --border: 1px solid var(--light-clr);
   --boxShadow: 0 0 16px lightgrey;

@@ -54,7 +54,7 @@ main {
 }
 
 .content4 {
-  padding: 3em 1em;
+  padding: 4em 1.5em;
 }
 
 .card,
@@ -69,10 +69,15 @@ header {
 }
 
 /* Images */
-.content4 img {
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+.content4 img,
+.content6-photo img {
+  border-top-left-radius: var(--borderRadius);
+  border-top-right-radius: var(--borderRadius);
   margin-bottom: 1em;
+  width: 100%;
+  height: 255px;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* .resto .two img {
@@ -105,6 +110,10 @@ header img {
 /* Content2 */
 .locationIcon {
   margin-left: 2em;
+}
+
+.content2 .fas {
+  font-size: 1.1rem;
 }
 
 .locationInput {
@@ -142,6 +151,7 @@ header img {
   box-shadow: 0 0 12px grey;
   color: white;
   background: var(--gradientBg);
+  cursor: pointer;
 }
 
 .gradientBtn {
@@ -162,7 +172,7 @@ align-items: center;
   box-shadow: 0 0 10px lightgrey;
 }
 
-.content3 li .fas:hover {
+.enjoy:hover {
   color: var(--primary-clr);
 }
 
@@ -205,6 +215,21 @@ align-items: center;
 }
 
 /* Content4 */
+.content4 {
+  width: 100%;
+}
+
+/* .resto-two-img {
+  background-image: url(../images/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-repeat: no-repeat;
+  width: auto;
+  min-height: 259px;
+  background-position: center;
+  background-size: cover;
+  border-radius: var(--borderRadius);
+  margin-bottom: 1em;
+} */
+
 .content4 .far,
 .content7 .far {
   font-size: 2rem;
@@ -243,6 +268,7 @@ align-items: center;
 font-size: smaller;
 }
 
+/* Content6 */
 /* Content7 */
 
 .content7 {
@@ -253,10 +279,8 @@ font-size: smaller;
   margin-top: -4em;
   position: relative;
   z-index: 1;
-}
-
-main {
-  padding: 2em 1em;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
 }
 
 .menu-card {
@@ -272,23 +296,25 @@ padding-left: 1.2em;
 padding-top: .8em;
 }
 
+.card__price {
+font-weight: 600;
+}
+
 .starters,
 .courses {
   margin-bottom: 3em;
 }
 
-.content7 h2:after {
+.desserts {
+  margin-bottom: 2em;
+}
+
+.starters h2::after,
+.courses h2::after,
+.desserts h2::after {
   content: "";
-  border-bottom: 2px solid var(--tertiary-clr);
+  border-bottom: 3px solid var(--tertiary-clr);
   width: 13%;
   display: block;
   margin: 0;
 }
-
-/*
-.content7 {
-  background: url("../images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-  background-position: 25px 25px;
-  background-repeat: no-repeat;
-  background-position: top;
-} */
