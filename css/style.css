@@ -80,10 +80,6 @@ header {
   object-position: center;
 }
 
-/* .resto .two img {
-  object-position: center;
-} */
-
 /* Header */
 .content1 {
   margin-top: 1em;
@@ -161,19 +157,58 @@ align-items: center;
 }
 
 /* Content3: Fonctionnement */
-.content3 h2 {
-  margin-right: 6em;
-}
-
-.content3 li {
-  margin-bottom: 1em;
+/*.card-order {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   padding: 1em 4em 1em 1em;
+  margin-bottom: 1em;
+  margin-inline: 1em;
   border-radius: 1em;
   box-shadow: 0 0 10px lightgrey;
 }
 
-.enjoy:hover {
+.card-order:hover {
+  background: #ebe1f7;
+  box-shadow: 8px 8px 35px -17px #9356dc;
+  cursor: pointer;
+}
+
+.card-order:hover i {
   color: var(--primary-clr);
+} */
+
+/*.card-order p:hover {
+  color: rgb(3, 1, 24);
+} */
+
+
+
+/* Content3: Fonctionnement */
+.content3 h2 {
+  margin-right: 6em;
+}
+
+.content3 a .fa-mobile-alt {
+  margin-left: 2em;
+}
+
+.content3 li {
+  background: #f5f4f5da;
+  border-radius: 1em;
+  box-shadow: 0px 5px 15px -10px rgba(0, 0, 0, 0.55);
+  padding: 1em 4em 1em 1em;
+  margin-bottom: 2em;
+}
+
+.content3 li:hover {
+  background: #ebe1f7;
+  box-shadow: 8px 8px 35px -17px #9356dc;
+  cursor: pointer;
+}
+
+.content3 li:hover i {
+  color: #9356dc;
 }
 
 /* .content3 li .fas:focus {
@@ -231,13 +266,34 @@ align-items: center;
 } */
 
 .content4 .far,
-.content7 .far {
+.content7 .far,
+.content4 .fas,
+.content7 .fas {
   font-size: 2rem;
 }
 
-.content4 .far:hover,
-.content7 .far:hover {
+.content4 .fas,
+.content7 .fas {
   background: var(--gradientBg);
+  background-clip: text;
+  color: transparent;
+  opacity: 0;
+}
+
+.content4 .fas:hover,
+.content7 .fas:hover {
+  background: var(--gradientBg);
+  background-clip: text;
+  color: transparent;
+  opacity: 1;
+}
+
+.content4 .fas {
+position: relative;
+}
+
+.content4 .far {
+  position: absolute;
 }
 
 /* Content5 */
