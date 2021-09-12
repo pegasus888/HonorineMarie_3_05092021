@@ -46,7 +46,7 @@
   border: var(--border);
   box-shadow: var(--boxShadow);
   border-radius: var(--borderRadius);
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
 main {
@@ -157,34 +157,14 @@ align-items: center;
 }
 
 /* Content3: Fonctionnement */
-/*.card-order {
+
+/*.content3 ul {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1em 4em 1em 1em;
-  margin-bottom: 1em;
-  margin-inline: 1em;
-  border-radius: 1em;
-  box-shadow: 0 0 10px lightgrey;
-}
-
-.card-order:hover {
-  background: #ebe1f7;
-  box-shadow: 8px 8px 35px -17px #9356dc;
-  cursor: pointer;
-}
-
-.card-order:hover i {
-  color: var(--primary-clr);
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 } */
 
-/*.card-order p:hover {
-  color: rgb(3, 1, 24);
-} */
-
-
-
-/* Content3: Fonctionnement */
 .content3 h2 {
   margin-right: 6em;
 }
@@ -253,17 +233,6 @@ align-items: center;
 .content4 {
   width: 100%;
 }
-
-/* .resto-two-img {
-  background-image: url(../images/stil-u2Lp8tXIcjw-unsplash.jpg);
-  background-repeat: no-repeat;
-  width: auto;
-  min-height: 259px;
-  background-position: center;
-  background-size: cover;
-  border-radius: var(--borderRadius);
-  margin-bottom: 1em;
-} */
 
 .content4 .far,
 .content7 .far,

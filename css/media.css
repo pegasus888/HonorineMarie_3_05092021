@@ -1,7 +1,94 @@
+@media (max-width: 380px) {
+  /* Content3 */
+.content3 ul {
+  padding-inline: 2em;
+}
+
+.content3 li {
+  width: auto;
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content3 li::before {
+  top: 2em;
+}
+
+.content3 h2 {
+  text-align: center;
+  margin-right: 0em;
+}
+}
+
 @media (min-width: 600px) {
   /* Content4 */
 .content4 img,
 .content6-photo img {
   height: 565px;
+}
+
+  /* Content5 */
+.content5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+}
+
+@media (min-width: 800px) {
+  /* Content4 */
+.content4 {
+  padding: 2em 5em;
+}
+}
+
+@media (min-width: 1000px) {
+  /* Content5 */
+.content5 {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+  /* Content4 */
+.card {
+  justify-content: space-around;
+}
+}
+
+@media (min-width: 1110px) {
+  /* Content1 */
+header img {
+  height: 50px;
+}
+
+  /* Content3 */
+.content3 ul {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.content3 li {
+  margin-left: 2em;
+}
+
+.content3 h2 {
+  text-align: center;
+  margin-right: 0em;
+}
+
+  /* Content4 */
+.resto {
+  box-shadow: 0 0 16px gray;
+  margin-bottom: 3em;
+}
+
+  /* Content5 */
+.content5 h2 {
+  font-weight: 900;
+  letter-spacing: .265em;
 }
 }
