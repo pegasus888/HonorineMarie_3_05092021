@@ -150,3 +150,29 @@
 
 </body>
 </html>
+
+<!--heart style coeur plein left to right-->
+--gradient1: blanc rose violet;
+--gradient: linear-gradient(135deg, blanc 0%, rose 100%)
+
+
+background-image: var(--gradient1)
+background-size: 100% (400%);
+animation: bg-animation 10s infinite;
+
+@keyframes bg-animation {
+  0% {backgroung-position: left;}
+  100% {backgroung-position: right;}
+}
+
+<!--heart style coeur plein white to pink (color + position: mouvement circulaire de left to right)-->
+animation-name: heartChecked
+animation-duration: 2s (4s);
+
+@keyframes heartChecked {
+  0% {backgroung-color: white; left: 0px; top: 0px;}
+  25% {backgroung-color: white pink; left: 300px; top: 0px;}
+  50% {backgroung-color: pink; left: 300px; top: 300px;}
+  75% {backgroung-color: pink violet; left: 0px; top: 300px;}
+  100% {backgroung-color: violet; left: 0px; top: 0px;}
+}

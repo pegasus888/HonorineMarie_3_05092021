@@ -39,6 +39,96 @@
   font-weight: 600;
 }
 
+/* Loading spinner */
+.loading-screen {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2e2e2e;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  /* overflow: hidden; */
+  pointer-events: none;
+  animation: fadeOut 7s 1;
+}
+
+@keyframes fadeOut {
+  0% {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+  60% {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+.loading {
+  width: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  animation: rotate 1.5s linear infinite;
+  transition-duration: 3s;
+}
+
+@keyframes rotate {
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+.loading span {
+  width: 32px;
+  height: 32px;
+  background-color: red;
+  margin: 4px;
+  animation: scale 1.5s linear infinite;
+}
+
+@keyframes scale {
+  50% {
+      transform: scale(1.2);
+  }
+}
+
+.loading span:nth-child(1) {
+  border-radius: 50% 50% 0 50%;
+  background-color: var(--primary-clr);
+  transform-origin: bottom right;
+}
+
+.loading span:nth-child(2) {
+  border-radius: 50% 50% 50% 0;
+  background-color: var(--secondary-clr);
+  transform-origin: bottom left;
+  animation-delay: .5s;
+}
+
+.loading span:nth-child(3) {
+  border-radius: 50% 0 50% 50%;
+  background-color: var(--tertiary-clr);
+  transform-origin: top right;
+  animation-delay: 1.5s;
+}
+
+.loading span:nth-child(4) {
+  border-radius: 0 50% 50% 50%;
+  background-color: #24dd87;
+  transform-origin: top left;
+  animation-delay: 1s;
+}
+
+
 /* Cards */
 .resto,
 .menu-card {
@@ -82,19 +172,21 @@ header {
 
 /* Header */
 .content1 {
-  margin-top: 1em;
+  /* margin-top: 1em;  (ne fonctionne pas avec ecran loading spinner*/
   margin-bottom: 1em;
 }
 
 header img {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1em;
 }
 
 .arrow {
   border: none;
   background: white;
   font-size: 1.5em;
+  margin-top: 1em;
 }
 
 /* Footer */
@@ -144,10 +236,16 @@ header img {
   font-weight: 600;
   border: none;
   border-radius: 2rem;
-  box-shadow: 0 0 12px grey;
+  box-shadow: 8px 8px 35px -17px grey;
   color: white;
   background: var(--gradientBg);
   cursor: pointer;
+}
+
+.content2 button:hover,
+.content7 button:hover {
+box-shadow: 0 0 12px #9356dc;
+background: linear-gradient(360deg, var(--secondary-clr), #b7a9c9);;
 }
 
 .gradientBtn {
