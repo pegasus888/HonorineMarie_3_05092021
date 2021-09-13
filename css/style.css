@@ -255,14 +255,6 @@ align-items: center;
 }
 
 /* Content3: Fonctionnement */
-
-/*.content3 ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-} */
-
 .content3 h2 {
   margin-right: 6em;
 }
@@ -343,9 +335,6 @@ align-items: center;
 
 .content4 .fas,
 .content7 .fas {
-  background: var(--gradientBg);
-  background-clip: text;
-  color: transparent;
   opacity: 0;
 }
 
@@ -356,6 +345,7 @@ align-items: center;
   color: transparent;
   opacity: 1;
   cursor: pointer;
+  transition: all 1000ms ease-in-out;
 }
 
 .content4 .fas,
