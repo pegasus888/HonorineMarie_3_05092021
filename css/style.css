@@ -158,6 +158,16 @@ header {
   margin-bottom: 1em;
 }
 
+.card__info {
+width: 100%;
+max-width: 398px;
+margin-inline: 1.5em;
+}
+
+.info-wrapper {
+width: 100%;
+}
+
 /* Images */
 .content4 img,
 .content6-photo img {
@@ -320,20 +330,20 @@ align-items: center;
   width: 100%;
 }
 
-.content4 .far,
-.content7 .far,
-.content4 .fas,
-.content7 .fas {
+.content4 .empty,
+.content7 .empty,
+.content4 .full,
+.content7 .full {
   font-size: 2rem;
 }
 
-.content4 .fas,
-.content7 .fas {
+.content4 .full,
+.content7 .full {
   opacity: 0;
 }
 
-.content4 .fas:hover,
-.content7 .fas:hover {
+.content4 .full:hover,
+.content7 .full:hover {
   background: var(--gradientBg);
   background-clip: text;
   color: transparent;
@@ -343,13 +353,13 @@ align-items: center;
   transition: all 1000ms ease-in-out;
 }
 
-.content4 .fas,
-.content7 .fas {
+.content4 .full,
+.content7 .full {
 position: relative;
 }
 
-.content4 .far,
-.content7 .far {
+.content4 .empty,
+.content7 .empty {
   position: absolute;
 }
 
@@ -411,6 +421,7 @@ padding-top: .8em;
 
 .card__price {
 font-weight: 600;
+padding-right: 3em;
 }
 
 .starters,
@@ -432,7 +443,7 @@ font-weight: 600;
   margin: 0;
 }
 
-/* Content7  menu-one fadeIn*/
+    /* Content7  menu-one fadeIn*/
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -445,7 +456,7 @@ font-weight: 600;
   }
 }
 
-  /* Starting state */
+    /* Starting state */
 .starters {
   opacity: 0;
   animation: fadeIn var(--bezier) 2000ms forwards;
@@ -464,4 +475,82 @@ font-weight: 600;
 .content7 .gradientBtn {
   opacity: 0;
   animation: fadeIn var(--bezier) 2000ms 6000ms forwards;
+}
+
+    /* Content7  CheckBox */
+
+.menu-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--tertiary-clr);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transition: all .5s linear;
+  width: 0;
+  height: auto;
+}
+
+.check-icon {
+  transition: all 0.5s linear;
+  color: white;
+  font-size: 20px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes rotationIcon {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(70px);
+  }
+}
+
+.menu-card {
+  animation: slideIn 2s linear both;
+}
+
+.menu-card:hover {
+cursor: pointer;
+}
+
+.menu-card:hover .card-check {
+  width: 70px;
+  animation: slideOut 0.1s linear;
+}
+
+.menu-card:hover .check-icon {
+  animation: rotationIcon 0.8s;
+}
+
+    /* Content7  ellipses
+
+.info-wrapper {
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+padding: 1em;
 }
