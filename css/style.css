@@ -345,6 +345,7 @@ align-items: center;
   color: transparent;
   opacity: 1;
   cursor: pointer;
+  transform: scale(1.1);
   transition: all 1000ms ease-in-out;
 }
 
@@ -435,4 +436,38 @@ font-weight: 600;
   width: 13%;
   display: block;
   margin: 0;
+}
+
+/* Content7  menu-one fadeIn*/
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+  /* Starting state */
+.starters {
+  opacity: 0;
+  animation: fadeIn var(--bezier) 2000ms forwards;
+}
+
+.courses {
+  opacity: 0;
+  animation: fadeIn var(--bezier) 2000ms 2000ms forwards;
+}
+
+.desserts {
+  opacity: 0;
+  animation: fadeIn var(--bezier) 2000ms 4000ms forwards;
+}
+
+.content7 .gradientBtn {
+  opacity: 0;
+  animation: fadeIn var(--bezier) 2000ms 6000ms forwards;
 }
