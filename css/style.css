@@ -264,24 +264,18 @@ align-items: center;
 }
 
 .content3 li {
-  background: #ebe1f7;
+  background: #f6f5f7;
   border-radius: 1em;
-  box-shadow: 0px 5px 15px -10px rgba(0, 0, 0, 0.55);
+  box-shadow: 5px 5px 15px -10px rgba(0, 0, 0, 0.55);
   padding: 1em 4em 1em 1em;
   margin-bottom: 2em;
 }
 
 .content3 li:hover {
-  background: #f5f4f5da;
-  box-shadow: 8px 8px 35px -17px #9356dc;
+  background: #fffaf0;
+  box-shadow: 14px 12px 20px -10px #9356dc;
   cursor: pointer;
 }
-
-/* .content3 li:focus {
-  background: #f5f4f5da;
-  box-shadow: 8px 8px 35px -17px #9356dc;
-  cursor: pointer;
-} */
 
 .content3 li:hover i {
   color: #9356dc;
