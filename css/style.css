@@ -160,7 +160,6 @@ header {
 
 .card__info {
 width: 100%;
-max-width: 398px;
 margin-inline: 1.5em;
 }
 
@@ -546,11 +545,12 @@ cursor: pointer;
   animation: rotationIcon 0.8s;
 }
 
-    /* Content7  ellipses
+    /* Content7  ellipsis */
 
-.info-wrapper {
-overflow: hidden;
-text-overflow: ellipsis;
-white-space: nowrap;
-padding: 1em;
+.info-wrapper h3,
+.card__info h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* padding-right: 1em; */
 }
