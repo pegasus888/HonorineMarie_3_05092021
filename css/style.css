@@ -159,12 +159,13 @@ header {
 }
 
 .card__info {
-width: 100%;
-margin-inline: 1.5em;
+  width: 100%;
+  margin-inline: 1.5em;
 }
 
 .info-wrapper {
-width: 100%;
+  width: 310px;
+  padding-right: 1em;
 }
 
 /* Images */
