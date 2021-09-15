@@ -562,7 +562,7 @@ cursor: pointer;
 
     /* ellipsis: info-wrapper hover */
 
-.info-wrapper:hover {
+.menu-wrapper:hover .info-wrapper {
   width: 250px;
   padding-right: 1em;
 }
