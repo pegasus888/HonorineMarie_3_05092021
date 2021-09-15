@@ -21,6 +21,35 @@
 }
 }
 
+/* Animation slideOut */
+    @media (max-width: 370px) {
+    .meu-card {
+      width: auto;
+      max-width: 200px;
+    }
+
+    .info-wrapper,
+    .card__info {
+      width: 50%;
+    }
+
+    .menu-card:hover .info-wrapper {
+      width: 200px;
+    }
+    }
+
+    @media (min-width: 371px) and (max-width: 500px) {
+    .menu-card:hover .info-wrapper {
+      width: 190px;
+    }
+
+    .info-wrapper {
+    width: auto;
+    max-width: 230px;
+    }
+    }
+
+
 @media (min-width: 600px) {
   /* Content4 */
 .content4 img,

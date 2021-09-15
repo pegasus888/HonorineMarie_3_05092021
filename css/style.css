@@ -487,7 +487,6 @@ padding-right: 3em;
 }
 
 .check-icon {
-  transition: all 0.5s linear;
   color: white;
   font-size: 20px;
 }
@@ -497,6 +496,7 @@ padding-right: 3em;
     transform: translateY(25px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -507,6 +507,7 @@ padding-right: 3em;
   0% {
     transform: rotateZ(0deg);
   }
+
   100% {
     transform: rotateZ(360deg);
   }
@@ -516,6 +517,7 @@ padding-right: 3em;
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(70px);
   }
@@ -563,6 +565,9 @@ cursor: pointer;
 }
 
     /* ellipsis: info-wrapper hover */
+.menu-card {
+  width: 100%;
+}
 
 .menu-card:hover .info-wrapper {
   width: 250px;
