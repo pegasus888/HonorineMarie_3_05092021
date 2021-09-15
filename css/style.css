@@ -158,16 +158,6 @@ header {
   margin-bottom: 1em;
 }
 
-.card__info {
-  width: 100%;
-  margin-inline: 1.5em;
-}
-
-.info-wrapper {
-  width: 310px;
-  padding-right: 1em;
-}
-
 /* Images */
 .content4 img,
 .content6-photo img {
@@ -543,10 +533,19 @@ cursor: pointer;
 }
 
 .menu-card:hover .check-icon {
-  animation: rotationIcon 0.8s;
+  animation: rotationIcon .5s;
 }
 
     /* Content7  ellipsis */
+.card__info {
+  width: 100%;
+  margin-inline: 1.5em;
+}
+
+.info-wrapper {
+  width: 310px;
+  padding-right: 1em;
+}
 
 .info-wrapper h3,
 .card__info h4 {
