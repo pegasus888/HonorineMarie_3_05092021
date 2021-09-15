@@ -492,8 +492,6 @@ padding-right: 3em;
   font-size: 20px;
 }
 
-
-
 @keyframes rotationIcon {
   0% {
     transform: rotateZ(0deg);

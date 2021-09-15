@@ -15,6 +15,13 @@
   top: 2em;
 }
 
+.content3 a {
+  font-size: .9625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .content3 h2 {
   text-align: center;
   margin-right: 0em;
@@ -23,6 +30,11 @@
 
 /* Animation slideOut */
     @media (max-width: 370px) {
+    body {
+    font-size: .8rem;
+    line-height: 1.3;
+    }
+
     .meu-card {
       width: auto;
       max-width: 200px;
@@ -35,6 +47,24 @@
 
     .menu-card:hover .info-wrapper {
       width: 200px;
+    }
+
+    @keyframes slideOut {
+      0% {
+        transform: translateX(0);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateX(35px);
+        opacity: 1;
+      }
+    }
+
+    .menu-card:hover .card-check {
+      opacity: 1;
+      width: 35px;
+      animation: slideOut 0.1s linear;
     }
     }
 
