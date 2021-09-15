@@ -554,3 +554,14 @@ cursor: pointer;
   text-overflow: ellipsis;
   /* padding-right: 1em; */
 }
+
+.checkbox {
+  display: flex;
+  align-items: stretch;
+}
+
+.card__price {
+  display: flex;
+  align-items: flex-end;
+  padding: 0 1em 1.1em 0;
+}
