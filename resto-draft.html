@@ -184,14 +184,19 @@ animation-duration: 2s (4s);
 
 #ebe1f7;
 
-<!--card check-->
-ligne 70 html
-<!-- Rectangular toggle switch
-                        <div class="toggle">
-                            <div class="container-wrapper">
-                                <label class="container">
-                                    <input type="checkbox" checked="checked">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                        </div>-->
+<!--checkBox-->
+@keyframes slideIn {
+  from {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.menu-card {
+  animation: slideIn 2s linear both;
+}

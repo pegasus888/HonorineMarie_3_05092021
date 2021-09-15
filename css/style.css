@@ -446,7 +446,7 @@ padding-right: 3em;
   }
 }
 
-    /* Starting state */
+    /* menu-one fadeIn Starting state */
 .starters {
   opacity: 0;
   animation: fadeIn var(--bezier) 2000ms forwards;
@@ -484,6 +484,7 @@ padding-right: 3em;
   transition: all .5s linear;
   width: 0;
   height: auto;
+  opacity: 0;
 }
 
 .check-icon {
@@ -491,17 +492,7 @@ padding-right: 3em;
   font-size: 20px;
 }
 
-@keyframes slideIn {
-  from {
-    transform: translateY(25px);
-    opacity: 0;
-  }
 
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 
 @keyframes rotationIcon {
   0% {
@@ -516,15 +507,13 @@ padding-right: 3em;
 @keyframes slideOut {
   0% {
     transform: translateX(0);
+    opacity: 0;
   }
 
   100% {
     transform: translateX(70px);
+    opacity: 1;
   }
-}
-
-.menu-card {
-  animation: slideIn 2s linear both;
 }
 
 .menu-card:hover {
@@ -532,6 +521,7 @@ cursor: pointer;
 }
 
 .menu-card:hover .card-check {
+  opacity: 1;
   width: 70px;
   animation: slideOut 0.1s linear;
 }
