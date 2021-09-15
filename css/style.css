@@ -502,6 +502,7 @@ padding-right: 3em;
     opacity: 1;
   }
 }
+
 @keyframes rotationIcon {
   0% {
     transform: rotateZ(0deg);
@@ -510,6 +511,7 @@ padding-right: 3em;
     transform: rotateZ(360deg);
   }
 }
+
 @keyframes slideOut {
   0% {
     transform: translateX(0);
@@ -562,7 +564,7 @@ cursor: pointer;
 
     /* ellipsis: info-wrapper hover */
 
-.menu-wrapper:hover .info-wrapper {
+.menu-card:hover .info-wrapper {
   width: 250px;
   padding-right: 1em;
 }
