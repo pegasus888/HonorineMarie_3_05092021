@@ -1,286 +1,282 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ohmyfood</title>
-  <meta name="Ohmyfood" content="restaurants gastronomiques à Paris">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohmyfood</title>
+    <meta name="Ohmyfood" content="restaurants gastronomiques à Paris">
 
-  <!--Import Font Awesome Icons-->
-  <script src="https://kit.fontawesome.com/2d9fcbdfeb.js" crossorigin="anonymous"></script>
+    <!--Import Font Awesome Icons-->
+    <script src="https://kit.fontawesome.com/2d9fcbdfeb.js" crossorigin="anonymous"></script>
 
-  <!--Css links-->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/utilities.css">
-  <link rel="stylesheet" href="css/media.css">
+    <!--Css links-->
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/article.css">
+    <link rel="stylesheet" href="css/checkbox.css">
+    <link rel="stylesheet" href="css/checkbox.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 
 
 <body>
 
-  <!--Content1: Header-->
-  <div class="content1 logo">
-    <header class="header">
-      <a href="index.html">
-        <button type="button" class="btn arrow">
-          <i class="fas fa-arrow-left"></i>
-        </button>
-      </a>
-      <img src="images/ohmyfood@2x.svg" alt="logo" class="">
-    </header>
-  </div><!--./Content1: Header-->
+<!--Content1: Header-->
+<div class="content1 logo">
+<header class="header">
+    <a href="index.html">
+    <button type="button" class="btn arrow">
+        <i class="fas fa-arrow-left"></i>
+    </button>
+    </a>
+    <img src="images/ohmyfood@2x.svg" alt="logo" class="">
+</header>
+</div><!--./Content1: Header-->
 
 
-  <!--Content6: Intro-->
-  <div class="content6 photo">
-    <img src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="" class="">
-  </div><!--./Content6-->
+<!--Content6: Intro-->
+<div class="content6 photo">
+<img src="images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" class="">
+</div> <!--./Content6-->
 
 
-  <!--Content7: Menu Three-->
-  <div class="content7 menu">
+<!--Content7: Menu One-->
+<div class="content7 menu">
 
-      <div class="menu__title">
-          <div>
-              <h1>À la française</h1>
-          </div>
-          <div>
-              <i class="empty far fa-heart"></i>
-              <i class="full fas fa-heart"></i>
-          </div>
-      </div>
+    <div class="menu__title">
+        <div>
+            <h1>À la française</h1>
+        </div>
+        <div>
+            <i class="empty far fa-heart"></i>
+            <i class="full fas fa-heart"></i>
+        </div>
+    </div>
 
-      <!--Menu Three-->
-      <main class="menu-one">
+    <!--Menu One-->
+    <main class="menu-one">
 
-        <section class="starters">
+
+        <article class="starters">
             <h2>ENTRÉES</h2>
 
 
-            <div class="menu-card">
+            <section class="menu-card one">
                 <div class="menu-wrapper">
-                    <div class="info-wrapper">
-                        <h3>Tartare de poulpe acidulé</h3>
-                        <div class="card__info">
+                        <div class="info-wrapper">
+                            <h3>Tartare de poulpe acidulé</h3>
+                            <div class="card__info">
                             <h4>Aux zestes d'orange</h4>
-                        </div>
-                    </div>
-
-                    <div class="checkbox">
-                        <div class="card__price"><p>25€</p></div>
-                        <div class="card-check">
-                            <div class="check-icon">
-                                <i class="fas fa-check-circle"></i>
                             </div>
                         </div>
-                    </div>
+
+                        <div class="checkbox-wrapper">
+                            <div class="card__price">25€</div>
+                            <label class="container" for="order one">
+                                <input type="checkbox" checked="checked" id="order one">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
                 </div>
-            </div>
+            </section>
 
 
-            <div class="menu-card">
+            <section class="menu-card one">
                 <div class="menu-wrapper">
-                    <div class="info-wrapper">
-                        <h3>Velouté de légumes d'antan</h3>
-                        <div class="card__info">
+                        <div class="info-wrapper">
+                            <h3>Velouté de légumes d'antan</h3>
+                            <div class="card__info">
                             <h4>Carotte, panais, topinambour</h4>
-                        </div>
-                    </div>
-
-                    <div class="checkbox">
-                        <div class="card__price"><p>35€</p></div>
-                        <div class="card-check">
-                            <div class="check-icon">
-                                <i class="fas fa-check-circle"></i>
                             </div>
                         </div>
-                    </div>
+
+                        <div class="checkbox-wrapper">
+                            <div class="card__price">35€</div>
+                            <label class="container" for="order two">
+                                <input type="checkbox" checked="checked" id="order two">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
                 </div>
-            </div>
+            </section>
 
 
-            <div class="menu-card">
+            <section class="menu-card one">
                 <div class="menu-wrapper">
-                    <div class="info-wrapper">
-                        <h3>Soupe à l'oignon</h3>
-                        <div class="card__info">
+                        <div class="info-wrapper">
+                            <h3>Soupe à l'oignon</h3>
+                            <div class="card__info">
                             <h4>Revisitée</h4>
-                        </div>
-                    </div>
-
-                    <div class="checkbox">
-                        <div class="card__price"><p>20€</p></div>
-                        <div class="card-check">
-                            <div class="check-icon">
-                                <i class="fas fa-check-circle"></i>
                             </div>
                         </div>
-                    </div>
+
+                        <div class="checkbox-wrapper">
+                            <div class="card__price">20€</div>
+                            <label class="container" for="order three">
+                                <input type="checkbox" checked="checked" id="order three">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
                 </div>
-            </div>
+            </section>
 
-        </section>
+        </article>
 
-        <section class="courses">
+
+        <article class="courses">
             <h2>PLATS</h2>
 
 
-            <div class="menu-card">
+            <section class="menu-card one">
                 <div class="menu-wrapper">
-                    <div class="info-wrapper">
-                        <h3>Coquilles Saint-Jacques</h3>
-                        <div class="card__info">
+                        <div class="info-wrapper">
+                            <h3>Coquilles Saint-Jacques</h3>
+                            <div class="card__info">
                             <h4>Accompagnées d'une purée de panais</h4>
-                        </div>
-                    </div>
-
-                    <div class="checkbox">
-                        <div class="card__price"><p>40€</p></div>
-                        <div class="card-check">
-                            <div class="check-icon">
-                                <i class="fas fa-check-circle"></i>
                             </div>
                         </div>
-                    </div>
+
+                        <div class="checkbox-wrapper">
+                            <div class="card__price">40€</div>
+                            <label class="container" for="order four">
+                                <input type="checkbox" checked="checked" id="order four">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
                 </div>
-            </div>
+            </section>
 
 
-            <div class="menu-card">
+            <section class="menu-card one">
                 <div class="menu-wrapper">
-                    <div class="info-wrapper">
-                        <h3>Magret de canard</h3>
-                        <div class="card__info">
+                        <div class="info-wrapper">
+                            <h3>Magret de canard</h3>
+                            <div class="card__info">
                             <h4>Et parmentier de pommes de terre</h4>
-                        </div>
-                    </div>
-
-                    <div class="checkbox">
-                        <div class="card__price"><p>35€</p></div>
-                        <div class="card-check">
-                            <div class="check-icon">
-                                <i class="fas fa-check-circle"></i>
                             </div>
                         </div>
-                    </div>
+
+                        <div class="checkbox-wrapper">
+                            <div class="card__price">35€</div>
+                            <label class="container" for="order five">
+                                <input type="checkbox" checked="checked" id="order five">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
                 </div>
-            </div>
+            </section>
 
 
-            <div class="menu-card">
+            <section class="menu-card one">
                 <div class="menu-wrapper">
-                    <div class="info-wrapper">
-                        <h3>Pigeonneau d’Ille-et-Vilaine</h3>
-                        <div class="card__info">
+                        <div class="info-wrapper">
+                            <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+                            <div class="card__info">
                             <h4>Sur son lit de gnocchis aux légumes</h4>
-                        </div>
-                    </div>
-
-                    <div class="checkbox">
-                        <div class="card__price"><p>44€</p></div>
-                        <div class="card-check">
-                            <div class="check-icon">
-                                <i class="fas fa-check-circle"></i>
                             </div>
                         </div>
-                    </div>
+
+                        <div class="checkbox-wrapper">
+                            <div class="card__price">44€</div>
+                            <label class="container" for="order six">
+                                <input type="checkbox" checked="checked" id="order six">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
                 </div>
-            </div>
+            </section>
 
-        </section>
+        </article>
 
-        <section class="desserts">
+
+        <article class="desserts">
             <h2>DESSERTS</h2>
 
 
-            <div class="menu-card">
+            <section class="menu-card one">
                 <div class="menu-wrapper">
-                    <div class="info-wrapper">
-                        <h3>Pétales de violettes glacés</h3>
-                        <div class="card__info">
+                        <div class="info-wrapper">
+                            <h3>Pétales de violettes glacés</h3>
+                            <div class="card__info">
                             <h4>Et purée de noisettes</h4>
-                        </div>
-                    </div>
-
-                    <div class="checkbox">
-                        <div class="card__price"><p>18€</p></div>
-                        <div class="card-check">
-                            <div class="check-icon">
-                                <i class="fas fa-check-circle"></i>
                             </div>
                         </div>
-                    </div>
+
+                        <div class="checkbox-wrapper">
+                            <div class="card__price">18€</div>
+                            <label class="container" for="order seven">
+                                <input type="checkbox" checked="checked" id="order seven">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
                 </div>
-            </div>
+            </section>
 
 
-            <div class="menu-card">
+            <section class="menu-card one">
                 <div class="menu-wrapper">
-                    <div class="info-wrapper">
-                        <h3>Fondant au chocolat</h3>
-                        <div class="card__info">
+                        <div class="info-wrapper">
+                            <h3>Fondant au chocolat</h3>
+                            <div class="card__info">
                             <h4>Revisité</h4>
-                        </div>
-                    </div>
-
-                    <div class="checkbox">
-                        <div class="card__price"><p>22€</p></div>
-                        <div class="card-check">
-                            <div class="check-icon">
-                                <i class="fas fa-check-circle"></i>
                             </div>
                         </div>
-                    </div>
+
+                        <div class="checkbox-wrapper">
+                            <div class="card__price">22€</div>
+                            <label class="container" for="order height">
+                                <input type="checkbox" checked="checked" id="order height">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
                 </div>
-            </div>
+            </section>
 
 
-            <div class="menu-card">
+            <section class="menu-card one">
                 <div class="menu-wrapper">
-                    <div class="info-wrapper">
-                        <h3>Millefeuille croustillant</h3>
-                        <div class="card__info">
+                        <div class="info-wrapper">
+                            <h3>Millefeuille croustillant</h3>
+                            <div class="card__info">
                             <h4>Myrtilles et pâte d’amande</h4>
-                        </div>
-                    </div>
-
-                    <div class="checkbox">
-                        <div class="card__price"><p>23€</p></div>
-                        <div class="card-check">
-                            <div class="check-icon">
-                                <i class="fas fa-check-circle"></i>
                             </div>
                         </div>
-                    </div>
+
+                        <div class="checkbox-wrapper">
+                            <div class="card__price">23€</div>
+                            <label class="container" for="order nine">
+                                <input type="checkbox" checked="checked" id="order nine">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
                 </div>
-            </div>
+            </section>
 
-        </section>
+        </article>
 
-      </main>
+    </main>
 
-      <!--Menu Three-->
-      <div class="gradientBtn">
-        <button type="button">Commander</button>
-      </div>
+<!--Menu One-->
+<div class="gradientBtn">
+    <button type="button">Commander</button>
+</div>
 
-  </div> <!--./Content7: Menu Three-->
+</div> <!--./Content7: Menu One-->
 
-
-  <!--Content5: Footer-->
-  <div class="content5">
+<!--Content5: Footer-->
+<div class="content5">
     <h2>ohmyfood</h2>
     <footer class="">
-      <ul>
+    <ul>
         <li><i class="fas fa-utensils"></i><a href="">Proposer un restaurant</a></li>
         <li><i class="fas fa-hands-helping"></i><a href="">Devenir partenaire</a></li>
         <li><a href="">Mentions légales</a></li>
         <li><a href="mailto:info@ohmyfood.com?subject=Commande">Contact</a></li>
-      </ul>
+    </ul>
     </footer>
 
-  </div><!--./Content5: Footer-->
+</div><!--./Content5: Footer-->
 
 </body>
 </html>
