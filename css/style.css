@@ -315,7 +315,7 @@ align-items: center;
   font-size: 0.9rem;
 }
 
-/* Content4 */
+/* Content4 Main, Restaurants */
 .content4 {
   width: 100%;
 }
@@ -353,16 +353,7 @@ position: relative;
   position: absolute;
 }
 
-/* Content5 */
-.content5 .fas {
-  padding-right: 1em;
-}
-
-.textContainer {
-  position: relative;
-}
-
-/* Top right text */
+/* Content4: "Nouveau" Top right text */
 .text-block {
   position: absolute;
   top: 20px;
@@ -377,12 +368,20 @@ position: relative;
   font-weight: 700;
 }
 
-.content5 .fa-hands-helping {
-font-size: smaller;
+/* Content5 Footer */
+.content5 .fas {
+  padding-right: 1em;
 }
 
-/* Content6 */
-/* Content7 */
+.textContainer {
+  position: relative;
+}
+
+.content5 .fa-hands-helping {
+  font-size: smaller;
+  }
+
+/* Content7 Menu One*/
 
 .content7 {
   margin-right: auto;
@@ -396,41 +395,8 @@ font-size: smaller;
   padding-left: 1.5em;
 }
 
-.menu-card {
-  background: white;
-}
-
 .content7 .menu__title {
 padding-top: 2em;
-}
-
-.content7 h3 {
-padding-left: 1.2em;
-padding-top: .8em;
-}
-
-.card__price {
-font-weight: 600;
-padding-right: 3em;
-}
-
-.starters,
-.courses {
-  margin-bottom: 3em;
-}
-
-.desserts {
-  margin-bottom: 2em;
-}
-
-.starters h2::after,
-.courses h2::after,
-.desserts h2::after {
-  content: "";
-  border-bottom: 3px solid var(--tertiary-clr);
-  width: 13%;
-  display: block;
-  margin: 0;
 }
 
     /* Content7  menu-one fadeIn*/
@@ -465,67 +431,6 @@ padding-right: 3em;
 .content7 .gradientBtn {
   opacity: 0;
   animation: fadeIn var(--bezier) 2000ms 6000ms forwards;
-}
-
-    /* Content7  CheckBox */
-
-.menu-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-.card-check {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--tertiary-clr);
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  transition: all .5s linear;
-  width: 0;
-  height: auto;
-  opacity: 0;
-}
-
-.check-icon {
-  color: white;
-  font-size: 20px;
-}
-
-@keyframes rotationIcon {
-  0% {
-    transform: rotateZ(0deg);
-  }
-
-  100% {
-    transform: rotateZ(360deg);
-  }
-}
-
-@keyframes slideOut {
-  0% {
-    transform: translateX(0);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateX(70px);
-    opacity: 1;
-  }
-}
-
-.menu-card:hover {
-cursor: pointer;
-}
-
-.menu-card:hover .card-check {
-  opacity: 1;
-  width: 70px;
-  animation: slideOut 0.1s linear;
-}
-
-.menu-card:hover .check-icon {
-  animation: rotationIcon .5s;
 }
 
     /* Content7  ellipsis */
