@@ -1,0 +1,79 @@
+/* Cards */
+.menu-card {
+    width: auto;
+    border: var(--border);
+    box-shadow: var(--boxShadow);
+    border-radius: var(--borderRadius);
+    margin-bottom: 1.5em;
+}
+
+.card,
+.menu__title,
+.card__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 1.5em;
+    margin-bottom: 1em;
+}
+
+/* Content7 Menu One: article*/
+    .menu-card {
+        background: white;
+    }
+
+    .content7 h3 {
+    padding-left: 1.2em;
+    padding-top: .8em;
+    }
+
+    .card__price {
+    align-self: self-end;
+    font-weight: 600;
+    padding-right: 3em;
+    padding-bottom: 1em;
+    }
+
+    .starters,
+    .courses {
+        margin-bottom: 3em;
+    }
+
+    .desserts {
+        margin-bottom: 2em;
+    }
+
+    .starters h2::after,
+    .courses h2::after,
+    .desserts h2::after {
+        content: "";
+        border-bottom: 3px solid var(--tertiary-clr);
+        width: 13%;
+        display: block;
+        margin: 0;
+    }
+
+        /* Content7  checkbox-wrapper */
+
+.menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .card-check {
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: var(--tertiary-clr);
+border-top-right-radius: 15px;
+border-bottom-right-radius: 15px;
+transition: all .5s linear;
+width: 0;
+height: auto;
+opacity: 0;
+} */
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: stretch;
+}
