@@ -2,33 +2,36 @@
 
 @keyframes slideIn {
     0% {
-        transform: translateX(0);
-    }
-
-    100% {
         transform: translateX(70px);
     }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
-@keyframes rotationIcon {
+
+@keyframes rotationCheckmark {
     0% {
-        transform: rotateZ(0deg);
+        transform: rotate(0deg);
     }
 
     100% {
-        transform: rotateZ(360deg);
+        transform: rotate(360deg);
     }
 }
 
+/*
 @keyframes slideOut {
     0% {
-        transform: translateX(70px);
+        transform: translateX(0);
     }
 
     100% {
-        transform: translateX(0);
+        transform: translateX(70px);
     }
 }
+*/
 
 .menu-card:hover {
 cursor: pointer;
@@ -36,9 +39,17 @@ cursor: pointer;
 
 .menu-card:hover .container {
     display: block;
-    animation: slideIn .1s linear, slideOut .1s linear;
+    animation: slideIn .1s linear;
 }
 
 .menu-card:hover .checkmark {
-    animation: rotationIcon .5s;
+    animation: rotationCheckmark .5s;
 }
+
+/*
+.menu-card:hover .container {
+    display: block;
+    animation: slideOut .5s linear;
+}
+
+*/

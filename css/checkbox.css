@@ -9,6 +9,7 @@
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     cursor: pointer;
+    padding-right: 1em;
 }
 
 /* Hide the browser's default checkbox */
@@ -23,7 +24,7 @@
 /* Create a custom checkbox */
 .checkmark {
     position: absolute;
-    top: 20px;
+    top: 28px;
     left: 20px;
     height: 30px;
     width: 30px;
