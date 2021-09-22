@@ -336,6 +336,7 @@ align-items: center;
 .content7 .full:hover {
   background: var(--gradientBg);
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   opacity: 1;
   cursor: pointer;

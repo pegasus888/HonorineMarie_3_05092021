@@ -1,16 +1,5 @@
 /* Content7  checkbox animation */
 
-@keyframes slideIn {
-    0% {
-        transform: translateX(70px);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-
 @keyframes rotationCheckmark {
     0% {
         transform: rotate(0deg);
@@ -21,34 +10,16 @@
     }
 }
 
-/*
-@keyframes slideOut {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(70px);
-    }
-}
-*/
-
 .menu-card:hover {
 cursor: pointer;
 }
 
 .menu-card:hover .container {
-    display: block;
-    animation: slideIn .1s linear;
+    width: 4rem;
+    /* margin-right: 0; */
 }
 
 .menu-card:hover .checkmark {
+    /* opacity: 1; */
     animation: rotationCheckmark .5s;
 }
-
-/*
-.menu-card:hover .container {
-    display: block;
-    animation: slideOut .5s linear;
-}
-*/
