@@ -143,6 +143,16 @@ main {
 }
 
   /* Content7 */
+.content7 .menu__title {
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.content7 h1 {
+padding-right: 2em;
+letter-spacing: .1rem;
+}
+
 main {
   margin: 0 6em;
 }
@@ -221,6 +231,18 @@ header img {
 .resto {
   box-shadow: 0 0 16px gray;
   margin-bottom: 3em;
+}
+
+.content4 h3 {
+  font-family: var(--ff--secondary);
+  font-weight: 600;
+  letter-spacing: .1rem;
+}
+
+.content4 .card:hover {
+  background: #fffaf0;
+  border-radius: var(--borderRadius);
+  box-shadow: 14px 12px 20px -10px #9356dc;
 }
 
   /* Content5 */
