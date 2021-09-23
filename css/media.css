@@ -1,6 +1,7 @@
 @media (max-width: 340px) {
 /* Create a custom checkbox */
 .checkmark {
+  position: relative;
   height: 20px;
   width: 20px;
 }
@@ -105,6 +106,13 @@ text-overflow: ellipsis;
 }
 }
 
+@media (min-width: 590px) {
+  /* Content7 */
+main {
+  margin: 0 3em;
+}
+}
+
 @media (min-width: 600px) {
   /* Content4 */
 .content4 img,
@@ -121,10 +129,43 @@ text-overflow: ellipsis;
 }
 }
 
+@media (min-width: 700px) {
+  /* Content6 */
+.content6 {
+  height: 420px;
+}
+
+.headerPic {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+  /* Content7 */
+main {
+  margin: 0 6em;
+}
+}
+
 @media (min-width: 800px) {
   /* Content4 */
 .content4 {
   padding: 2em 5em;
+}
+}
+
+@media (min-width: 900px) {
+  /* Content7 */
+.menu-card {
+  margin-inline: 3em;
+}
+}
+
+@media (min-width: 970px) {
+  /* Content7 */
+.menu-card {
+  margin-inline: 6em;
 }
 }
 
@@ -138,6 +179,18 @@ text-overflow: ellipsis;
   /* Content4 */
 .card {
   justify-content: space-around;
+}
+
+/* Content7 */
+main {
+  margin: 0 8em;
+}
+}
+
+@media (min-width: 1050px) {
+/* Content7 */
+main {
+  margin: 0 10em;
 }
 }
 
@@ -174,5 +227,19 @@ header img {
 .content5 h2 {
   font-weight: 900;
   letter-spacing: .265em;
+}
+}
+
+@media (min-width: 1150px) {
+/* Content7 */
+.menu-card {
+  margin-inline: 8em;
+}
+}
+
+@media (min-width: 1250px) {
+/* Content7 */
+.menu-card {
+  margin-inline: 10em;
 }
 }
