@@ -16,10 +16,8 @@ cursor: pointer;
 
 .menu-card:hover .container {
     width: 4rem;
-    /* margin-right: 0; */
 }
 
 .menu-card:hover .checkmark {
-    /* opacity: 1; */
     animation: rotationCheckmark .5s;
 }

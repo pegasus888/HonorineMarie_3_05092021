@@ -5,6 +5,7 @@
     box-shadow: var(--boxShadow);
     border-radius: var(--borderRadius);
     margin-bottom: 1.5em;
+    overflow: hidden;
 }
 
 .card,

@@ -443,8 +443,8 @@ padding-top: 2em;
 .info-wrapper h3,
 .card__info h4 {
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  /*  overflow: hidden;
+  text-overflow: ellipsis; */
 }
 
 .checkbox {

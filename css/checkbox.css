@@ -10,7 +10,7 @@
     border-bottom-right-radius: 15px;
     /* cursor: pointer; */
     transition: width 600ms ease-in-out;
-    /* padding-right: 1em; */
+    overflow: hidden;
 }
 
 /* Hide the browser's default checkbox */
@@ -24,14 +24,11 @@
 
 /* Create a custom checkbox */
 .checkmark {
-    position: absolute;
-    top: 28px;
-    left: 25px;
+    position: relative;
     height: 30px;
     width: 30px;
     background-color: #eee;
     border-radius: 50%;
-    /*  opacity: 0; */
 }
 
 /* On mouse-over, add a grey background color */
