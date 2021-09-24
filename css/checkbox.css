@@ -8,7 +8,6 @@
     background-color: var(--tertiary-clr);
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    /* cursor: pointer; */
     transition: width 600ms ease-in-out;
     overflow: hidden;
 }
