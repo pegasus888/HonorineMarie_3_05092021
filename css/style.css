@@ -248,6 +248,12 @@ box-shadow: 0 0 12px #9356dc;
 background: linear-gradient(360deg, var(--secondary-clr), #b7a9c9);;
 }
 
+.content2 button:focus,
+.content7 button:focus {
+box-shadow: 0 0 12px #9356dc;
+background: linear-gradient(360deg, var(--secondary-clr), #b7a9c9);;
+}
+
 .gradientBtn {
 display: flex;
 justify-content: center;
