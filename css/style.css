@@ -52,7 +52,7 @@
   z-index: 1;
   overflow: hidden;
   pointer-events: none;
-  animation: fadeOut 1s;
+  animation: fadeOut 3s;
 }
 
 @keyframes fadeOut {
