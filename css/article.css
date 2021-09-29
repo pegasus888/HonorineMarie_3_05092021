@@ -60,19 +60,6 @@
     justify-content: space-between;
 }
 
-/* .card-check {
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: var(--tertiary-clr);
-border-top-right-radius: 15px;
-border-bottom-right-radius: 15px;
-transition: all .5s linear;
-width: 0;
-height: auto;
-opacity: 0;
-} */
-
 .checkbox-wrapper {
     display: flex;
     align-items: stretch;

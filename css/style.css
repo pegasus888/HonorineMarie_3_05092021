@@ -171,7 +171,6 @@ header {
 
 /* Header */
 .content1 {
-  /* margin-top: 1em;  (ne fonctionne pas avec ecran loading spinner*/
   margin-bottom: 1em;
 }
 
@@ -448,8 +447,6 @@ padding-top: 2em;
 .info-wrapper h3,
 .card__info h4 {
   white-space: nowrap;
-  /*  overflow: hidden;
-  text-overflow: ellipsis; */
 }
 
 .checkbox {

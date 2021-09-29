@@ -21,11 +21,6 @@
 .menu-card:hover .info-wrapper {
   width: 130px;
 }
-
-  /* Content7
-body  {
-font-size: .7rem;
-} */
 }
 
 @media (max-width: 380px) {
